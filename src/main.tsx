@@ -4,14 +4,15 @@ import './index.css';
 import { DevSupport } from '@react-buddy/ide-toolbox';
 import { ComponentPreviews, useInitial } from './dev';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Root from './routes/root';
-import ErrorPage from './ErrorPage';
+import Root from './routes/Root';
+import ErrorPage from './routes/ErrorPage';
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Root />,
         errorElement: <ErrorPage />,
+        children: [],
     },
 ]);
 
