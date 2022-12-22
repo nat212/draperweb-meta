@@ -1,5 +1,5 @@
-import Button from '@/components/ui/Button/Button';
-import { Card, CardActions, CardBody, CardTitle } from '@/components/ui/Card';
+import Button from '@/components/ui/Button/Button'
+import { Card, CardActions, CardBody, CardTitle } from '@/components/ui/Card'
 
 export default function Login() {
     return (
@@ -14,5 +14,5 @@ export default function Login() {
                 </CardActions>
             </Card>
         </div>
-    );
+    )
 }

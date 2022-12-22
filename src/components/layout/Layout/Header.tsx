@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
 function Header() {
-    return <header role="navigation"></header>;
+    return <header role="navigation"></header>
 }
 
-export default Header;
+export default Header

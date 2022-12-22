@@ -1,6 +1,6 @@
-import { act, render, screen } from '@testing-library/react';
-import ErrorPage from './ErrorPage';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { act, render, screen } from '@testing-library/react'
+import ErrorPage from './ErrorPage'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter([
     {
@@ -8,14 +8,14 @@ const router = createBrowserRouter([
         element: <div>Hello, world!</div>,
         errorElement: <ErrorPage />,
     },
-]);
+])
 
 describe('ErrorPage', () => {
     it('should render', async () => {
-        render(<RouterProvider router={router} />);
+        render(<RouterProvider router={router} />)
         act(() => {
-            router.navigate('/404');
-        });
-        expect(screen.getByText('Oops!')).toBeInTheDocument();
-    });
-});
+            router.navigate('/404')
+        })
+        expect(screen.getByText('Oops!')).toBeInTheDocument()
+    })
+})

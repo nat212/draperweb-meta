@@ -1,8 +1,8 @@
-import React from 'react';
-import Header from './Header';
+import React from 'react'
+import Header from './Header'
 
 interface Props {
-    children: React.ReactNode;
+    children: React.ReactNode
 }
 
 function Layout({ children }: Props) {
@@ -11,7 +11,7 @@ function Layout({ children }: Props) {
             <Header />
             <main role="main">{children}</main>
         </>
-    );
+    )
 }
 
-export default Layout;
+export default Layout

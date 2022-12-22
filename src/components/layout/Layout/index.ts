@@ -1,6 +1,6 @@
-import Layout from './Layout';
-import Header from './Header';
+import Layout from './Layout'
+import Header from './Header'
 
-export { Header };
+export { Header }
 
-export default Layout;
+export default Layout

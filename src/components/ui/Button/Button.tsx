@@ -1,11 +1,11 @@
-import React from 'react';
-import cn from 'classnames';
+import React from 'react'
+import cn from 'classnames'
 
 interface Props {
-    children?: React.ReactNode;
-    className?: string;
-    type?: React.ButtonHTMLAttributes<HTMLButtonElement>['type'];
-    onClick?: React.ButtonHTMLAttributes<HTMLButtonElement>['onClick'];
+    children?: React.ReactNode
+    className?: string
+    type?: React.ButtonHTMLAttributes<HTMLButtonElement>['type']
+    onClick?: React.ButtonHTMLAttributes<HTMLButtonElement>['onClick']
     theme?:
         | 'primary'
         | 'secondary'
@@ -13,7 +13,7 @@ interface Props {
         | 'info'
         | 'success'
         | 'warning'
-        | 'danger';
+        | 'danger'
 }
 
 export default function Button({
@@ -23,14 +23,14 @@ export default function Button({
     children,
     theme = 'primary',
 }: Props) {
-    const classes = cn('btn', className, `btn-${theme}`);
+    const classes = cn('btn', className, `btn-${theme}`)
     return (
         <button type={type} className={classes} onClick={onClick}>
             {children}
         </button>
-    );
+    )
 }
 
 Button.defaultProps = {
     type: 'button',
-};
+}

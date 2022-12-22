@@ -1,10 +1,10 @@
-import { render } from '@testing-library/react';
-import CardBody from './CardBody';
+import { render } from '@testing-library/react'
+import CardBody from './CardBody'
 
 describe('CardBody', () => {
     it('should render', () => {
-        render(<CardBody />);
+        render(<CardBody />)
 
         // TODO: Implement tests
-    });
-});
+    })
+})

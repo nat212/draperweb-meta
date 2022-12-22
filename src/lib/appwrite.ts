@@ -1,5 +1,5 @@
-import { Client } from 'appwrite';
+import { Client } from 'appwrite'
 
 export const appwrite = new Client()
     .setEndpoint('http://localhost/v1')
-    .setProject('draperweb-meta-dev');
+    .setProject('draperweb-meta-dev')
